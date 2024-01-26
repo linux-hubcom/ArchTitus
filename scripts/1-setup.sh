@@ -4,6 +4,8 @@
 # @file Setup
 # @brief Configures installed system, installs base packages, and creates user. 
 echo -ne "Istalling root cert"
+export http_proxy='http://192.168.2.1:3128'
+export https_proxy='http://192.168.2.1:3128'
 sudo trust anchor --store $HOME/ArchTitus/squid-self-signed.crt
 echo -ne "
 -------------------------------------------------------------------------

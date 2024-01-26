@@ -9,6 +9,9 @@ set -a
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 SCRIPTS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/scripts
 CONFIGS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/configs
+export http_proxy='http://192.168.2.1:3128'
+export https_proxy='http://192.168.2.1:3128'
+sudo trust anchor --store $HOME/ArchTitus/squid-self-signed.crt
 set +a
 echo -ne "
 -------------------------------------------------------------------------
