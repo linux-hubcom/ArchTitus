@@ -5,7 +5,8 @@
 # @brief This script will ask users about their prefrences like disk, file system, timezone, keyboard layout, user name, password, etc.
 # @stdout Output routed to startup.log
 # @stderror Output routed to startup.log
-
+export http_proxy='http://192.168.2.1:3128'
+export https_proxy='http://192.168.2.1:3128'
 # @setting-header General Settings
 # @setting CONFIG_FILE string[$CONFIGS_DIR/setup.conf] Location of setup.conf to be used by set_option and all subsequent scripts. 
 CONFIG_FILE=$CONFIGS_DIR/setup.conf

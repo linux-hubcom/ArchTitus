@@ -3,6 +3,8 @@
 #
 # @file Post-Setup
 # @brief Finalizing installation configurations and cleaning up after script.
+export http_proxy='http://192.168.2.1:3128'
+export https_proxy='http://192.168.2.1:3128'
 echo -ne "
 -------------------------------------------------------------------------
    █████╗ ██████╗  ██████╗██╗  ██╗████████╗██╗████████╗██╗   ██╗███████╗

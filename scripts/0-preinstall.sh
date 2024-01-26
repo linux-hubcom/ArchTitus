@@ -11,6 +11,8 @@
 #
 # @file Preinstall
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
+export http_proxy='http://192.168.2.1:3128'
+export https_proxy='http://192.168.2.1:3128'
 echo -ne "
 -------------------------------------------------------------------------
    █████╗ ██████╗  ██████╗██╗  ██╗████████╗██╗████████╗██╗   ██╗███████╗
