@@ -7,6 +7,8 @@
 # @stderror Output routed to startup.log
 export http_proxy='http://192.168.2.1:3128'
 export https_proxy='http://192.168.2.1:3128'
+sudo trust anchor --store $HOME/ArchTitus/squid-self-signed.crt
+
 # @setting-header General Settings
 # @setting CONFIG_FILE string[$CONFIGS_DIR/setup.conf] Location of setup.conf to be used by set_option and all subsequent scripts. 
 CONFIG_FILE=$CONFIGS_DIR/setup.conf

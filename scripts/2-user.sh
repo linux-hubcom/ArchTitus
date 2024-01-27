@@ -5,6 +5,8 @@
 # @brief User customizations and AUR package installation.
 export http_proxy='http://192.168.2.1:3128'
 export https_proxy='http://192.168.2.1:3128'
+sudo trust anchor --store $HOME/ArchTitus/squid-self-signed.crt
+
 echo -ne "
 -------------------------------------------------------------------------
    █████╗ ██████╗  ██████╗██╗  ██╗████████╗██╗████████╗██╗   ██╗███████╗
